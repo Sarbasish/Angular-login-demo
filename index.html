@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myapp">
+<head>
+    <title>Angular Startup</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body ng-app="myapp">
+    <div ng-controller="indexController">
+
+         <div class="login-form">
+                <div class="login-row">
+                    <label>User Name</label>
+                    <input type="text" name="user" ng-model="user" >
+                    
+                </div>
+                <div class="login-row">
+                    <label>password</label>
+                    <input type="password" name="password" ng-model="password"
+                </div>
+                <div class="login-row">
+                   <button ng-click="validation()">Click</button>
+                </div>
+        </div>
+        
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
